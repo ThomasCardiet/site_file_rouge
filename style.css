@@ -92,6 +92,11 @@ main {
     width: 100%;
 }
 
+.sondage {
+    background-color: rgba(0, 67, 88, 0.38);
+    border-radius: 80%;
+}
+
 .sondage h2 {
     font-weight: bold;
     font-size: 3em;
@@ -131,4 +136,19 @@ main {
 
 .sondage_desc div {
     text-align: center;
+}
+
+footer {
+    margin-top: 150px;
+    padding: 5%;
+    background-color: var(--base3);
+    text-align: center;
+    border-radius: 20px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: var(--base2);
+    font-weight: bold;
+    font-size: 3em;
 }
