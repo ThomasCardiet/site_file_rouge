@@ -2,17 +2,90 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>ForDev'</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet"
-          href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet"
-          href="style.css">
+    <title>SondageBerry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="https://kit.fontawesome.com/dc883addae.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
 </head>
 <body>
 
+    <header>
+
+        <div class="header_top">
+            <div class="burger_icons">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="head_title">
+                <img src="img/logo.png" alt="#">
+                <h1>SondageBerry</h1>
+            </div>
+        </div>
+
+        <nav class="header_links">
+
+            <hr>
+            <a href="#"><i class="fas fa-home"></i> Accueil</a>
+            <hr>
+            <a href="#"><i class="fas fa-sign-in-alt"></i> Se Connecter</a>
+            <hr>
+            <a href="#"><i class="fas fa-poll-h"></i> Sondages</a>
+            <hr>
+            <a href="#"><i class="fas fa-info-circle"></i> Informations</a>
+            <hr>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="sondage">
+            <div class="sondage_icon">
+                <img src="img/sondage1.png" alt="#">
+            </div>
+            <div class="sondage_desc">
+                <h2>1# Quelle est votre couleur préférée ?</h2>
+                <div>
+                    <a href="sondage.html">Répondre à ce sondage <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sondage">
+            <div class="sondage_icon">
+                <img src="img/sondage2.png" alt="#">
+            </div>
+            <div class="sondage_desc">
+                <h2>1# Quel est votre sport préféré ?</h2>
+                <div>
+                    <a href="sondage.html">Répondre à ce sondage <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sondage">
+            <div class="sondage_icon">
+                <img src="img/sondage3.png" alt="#">
+            </div>
+            <div class="sondage_desc">
+                <h2>1# Quel est votre plat préféré ?</h2>
+                <div>
+                    <a href="sondage.html">Répondre à ce sondage <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="#">Accueil</a>
+    </footer>
 
 
+    <script src="main.js"></script>
 </body>
 </html>

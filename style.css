@@ -1,46 +1,134 @@
 :root {
 
-    --base03               : #002B36;
-    --base02               : #073642;
-    --base01               : #586E75;
-    --base00               : #657B83;
-    --base0                : #839496;
-    --base1                : #93A1A1;
-    --base2                : #EEE8D5;
-    --base3                : #FDF6E3;
+    --base8             : #181818;
+    --base7             : #DB222A;
+    --base4             : #1F7A8C;
+    --base3             : #053C5E;
+    --base2             : #BFDBF7;
+    --base1             : #A31621;
 
-    --yellow               : #B58900;
-    --orange               : #CB4B16;
-    --red                  : #DC322F;
-    --magenta              : #D33682;
-    --violet               : #6C71C4;
-    --blue                 : #268BD2;
-    --cyan                 : #2AA198;
-    --green                : #859900;
+    --background_header : white;
+    --background_sondage : white;
+    --title             : #151414;
 
-    --background           : var(--base03);
-    --background-highlight : var(--base02);
-    --text-secondary       : var(--base01);
-    --text                 : var(--base0);
-    --text-emphasis        : var(--base1);
+    --font_title2            : 'acmeregular';
+    --font_title1           : 'pacificoregular';
+
 }
 
-@media (prefers-color-scheme : light) {
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('fonts/pacifico-regular-webfont.woff2') format('woff2'),
+    url('fonts/pacifico-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-    :root {
-
-        --background           : var(--base3);
-        --background-highlight : var(--base2);
-        --text-secondary       : var(--base1);
-        --text                 : var(--base00);
-        --text-emphasis        : var(--base01);
-    }
 }
 
+@font-face {
+    font-family: 'acmeregular';
+    src: url('fonts/acme-regular-webfont.woff2') format('woff2'),
+    url('fonts/acme-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html {
+    background: url("img/background.png") no-repeat fixed;
+    background-size: cover;
+}
 
-    font-family      : 'Fira Code', monospace;
-    background-color : var(--background);
-    min-height       : 100vh;
-    color            : var(--text);
+header .header_top {
+    background-color: var(--background_header);
+    border-radius: 20px;
+}
+
+header div img {
+    max-width: 25%;
+}
+
+header div {
+    display: flex;
+}
+
+header div .head_title {
+    color: var(--title);
+    display: flex;
+    padding: 5%;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: var(--font_title2), sans-serif;
+    width: 65%;
+    margin: auto;
+}
+
+header .burger_icons {
+    font-size: 5em;
+    padding: 5%;
+    align-items: center;
+}
+
+header .header_links {
+    font-size: 3em;
+    text-align: center;
+    background-color: var(--background_header);
+}
+
+header .header_links a {
+    text-decoration: none;
+    color: var(--title);
+    font-family: var(--font_title2), sans-serif;
+    font-weight: bold;
+}
+
+.header_links hr {
+    height: 3px;
+    background-color: var(--base8);
+    opacity: 30%;
+}
+
+main {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.sondage h2 {
+    font-weight: bold;
+    font-size: 3em;
+    font-family: var(--font_title1);
+    text-align: center;
+    border: black 5px solid;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: var(--background_sondage);
+}
+
+.sondage_icon {
+    width: 60%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.sondage_icon img {
+    width: 100%;
+    border-radius: 50%;
+    border: var(--background_sondage) 5px solid;
+    margin: auto;
+    background-color: var(--base2);
+}
+
+.sondage a {
+    text-decoration: none;
+    color: var(--font_title2);
+    font-family: var(--font_title2);
+    font-weight: bold;
+    font-size: 3em;
+    border: black 5px solid;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: var(--background_sondage);
+}
+
+.sondage_desc div {
+    text-align: center;
 }
