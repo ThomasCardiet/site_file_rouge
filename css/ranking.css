@@ -1,0 +1,184 @@
+:root {
+
+    --base8             : #181818;
+    --base7             : #DB222A;
+    --base4             : #1F7A8C;
+    --base3             : #053C5E;
+    --base2             : #BFDBF7;
+    --base1             : #A31621;
+
+    --background_header : white;
+    --background_sondage : white;
+    --title             : #151414;
+
+    --font_title2            : 'acmeregular';
+    --font_title1           : 'pacificoregular';
+
+}
+
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('../fonts/pacifico-regular-webfont.woff2') format('woff2'),
+    url('../fonts/pacifico-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'acmeregular';
+    src: url('../fonts/acme-regular-webfont.woff2') format('woff2'),
+    url('../fonts/acme-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html {
+    background: url("../img/background.png") no-repeat fixed;
+    background-size: cover;
+}
+
+header .header_top {
+    background-color: var(--background_header);
+    border-radius: 20px;
+}
+
+.head_title img {
+    max-width: 25%;
+}
+
+header div {
+    display: flex;
+}
+
+header div .head_title {
+    color: var(--title);
+    display: flex;
+    padding: 5%;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: var(--font_title2), sans-serif;
+    width: 65%;
+    margin: auto;
+}
+
+header .burger_icons {
+    font-size: 5em;
+    padding: 5%;
+    align-items: center;
+}
+
+header .header_links {
+    font-size: 3em;
+    text-align: center;
+    background-color: var(--background_header);
+}
+
+header .header_links a {
+    text-decoration: none;
+    color: var(--title);
+    font-family: var(--font_title2), sans-serif;
+    font-weight: bold;
+}
+
+.header_links hr {
+    height: 3px;
+    background-color: var(--base8);
+    opacity: 30%;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.podium_title {
+    font-weight: bold;
+    font-size: 5em;
+    font-family: var(--font_title1);
+    text-align: center;
+    border: black 5px solid;
+    padding: 5%;
+    border-radius: 20px;
+    background-color: var(--background_sondage);
+    text-transform: uppercase;
+}
+
+.place {
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+}
+
+.place img {
+    width: 100%;
+}
+
+.place p {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: var(--font_title1);
+    text-align: center;
+    border: black 5px solid;
+    padding: 3%;
+    border-radius: 20px;
+    background-color: var(--background_sondage);
+}
+
+footer {
+    margin-top: 150px;
+    padding: 5%;
+    background-color: var(--base3);
+    text-align: center;
+    border-radius: 20px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: var(--base2);
+    font-weight: bold;
+    font-size: 3em;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .burger_icons .fas:hover {
+        cursor: pointer;
+        color: var(--base1);
+    }
+
+    .burger_icons .fas {
+        font-size: 2em;
+    }
+
+    .head_title h1 {
+        font-size: 3em;
+        padding-top: 50px;
+    }
+
+    .header_links a:hover {
+        color: var(--base1);
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .podium {
+        display: flex;
+    }
+
+    .place {
+        width: 40%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer div a:hover {
+        color: var(--base1);
+    }
+
+}

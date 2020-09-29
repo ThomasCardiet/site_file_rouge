@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'pacificoregular';
-    src: url('fonts/pacifico-regular-webfont.woff2') format('woff2'),
-    url('fonts/pacifico-regular-webfont.woff') format('woff');
+    src: url('../fonts/pacifico-regular-webfont.woff2') format('woff2'),
+    url('../fonts/pacifico-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,14 +27,14 @@
 
 @font-face {
     font-family: 'acmeregular';
-    src: url('fonts/acme-regular-webfont.woff2') format('woff2'),
-    url('fonts/acme-regular-webfont.woff') format('woff');
+    src: url('../fonts/acme-regular-webfont.woff2') format('woff2'),
+    url('../fonts/acme-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 html {
-    background: url("img/background.png") no-repeat fixed;
+    background: url("../img/background.png") no-repeat fixed;
     background-size: cover;
 }
 
@@ -43,7 +43,7 @@ header .header_top {
     border-radius: 20px;
 }
 
-header div img {
+.head_title img {
     max-width: 25%;
 }
 
@@ -89,12 +89,12 @@ header .header_links a {
 
 main {
     margin-top: 50px;
-    width: 100%;
 }
 
 .sondage {
     background-color: rgba(0, 67, 88, 0.38);
     border-radius: 80%;
+    padding-bottom: 100px;
 }
 
 .sondage h2 {
@@ -155,5 +155,56 @@ footer div a {
 
 @media screen and (min-width: 1000px) {
 
+    .burger_icons .fas:hover {
+        cursor: pointer;
+        color: var(--base1);
+    }
+
+    .burger_icons .fas {
+        font-size: 2em;
+    }
+
+    .head_title h1 {
+        font-size: 3em;
+        padding-top: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+
+    .sondage {
+        width: 40%;
+        margin: auto;
+    }
+
+    .header_links a:hover {
+        color: var(--base1);
+    }
+
+    .sondage h2 {
+        font-size: 2em;
+    }
+
+    .sondage a {
+        font-size: 1.5em;
+    }
+
+    .sondage_desc div a:hover {
+        background-color: var(--base1);
+        color: white;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer div a:hover {
+        color: var(--base1);
+    }
 
 }
