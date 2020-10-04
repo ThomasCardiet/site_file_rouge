@@ -12,73 +12,73 @@
 </head>
 <body>
 
-<header>
+    <header>
 
-    <div class="header_top">
-        <div class="burger_icons">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
+        <div class="header_top">
+            <div class="burger_icons">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="head_title">
+                <img src="img/logo.png" alt="#">
+                <h1>SondageBerry</h1>
+            </div>
         </div>
 
-        <div class="head_title">
-            <img src="img/logo.png" alt="#">
-            <h1>SondageBerry</h1>
+        <nav class="header_links">
+
+            <hr>
+            <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+            <hr>
+            <a href="#"><i class="fas fa-sign-in-alt"></i> Se Connecter</a>
+            <hr>
+            <a href="index.html"><i class="fas fa-poll-h"></i> Sondages</a>
+            <hr>
+            <a href="ranking.html"><i class="fas fa-info-circle"></i> Classement</a>
+            <hr>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2 id="question" class="question"></h2>
+
+        <div class="responses">
+            <form method="post">
+                <div>
+                    <input type="checkbox" class="checkbox" id="0"><label class="response"></label>
+                </div><br>
+                <div>
+                    <input type="checkbox" class="checkbox" id="1"><label class="response"></label>
+                </div><br>
+                <div>
+                    <input type="checkbox" class="checkbox" id="2"><label class="response"></label>
+                </div><br>
+                <div>
+                    <input type="checkbox" class="checkbox" id="3"><label class="response"></label>
+                </div><br>
+
+                <input id="button" type="button" name="confirm_button" class="button" value="Confirmer">
+            </form>
         </div>
-    </div>
 
-    <nav class="header_links">
+    </main>
 
-        <hr>
-        <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
-        <hr>
-        <a href="#"><i class="fas fa-sign-in-alt"></i> Se Connecter</a>
-        <hr>
-        <a href="index.html"><i class="fas fa-poll-h"></i> Sondages</a>
-        <hr>
-        <a href="ranking.html"><i class="fas fa-info-circle"></i> Classement</a>
-        <hr>
-    </nav>
+    <footer>
+        <div>
+            <a href="index.html">Accueil</a>
+        </div>
+        <div>
+            <a href="#">Se Connecter</a>
+        </div>
+        <div>
+            <a href="ranking.html">Classement</a>
+        </div>
+    </footer>
 
-</header>
-
-<main>
-
-    <h2 class="question">Quelle est la bonne combinaison de couleurs nécessaire à la confection du noir ?</h2>
-
-    <div class="responses">
-        <form method="post">
-            <div>
-                <input type="checkbox" class="checkbox" id="response_1"><label>Bleu, Jaune, Rouge</label>
-            </div><br>
-            <div>
-                <input type="checkbox" class="checkbox" id="response_2"><label>Bleu, Blanc, Rouge</label>
-            </div><br>
-            <div>
-                <input type="checkbox" class="checkbox" id="response_3"><label>Bleu, Vert, Rouge</label>
-            </div><br>
-            <div>
-                <input type="checkbox" class="checkbox" id="response_4"><label>Vert, Blanc, Rouge</label>
-            </div><br>
-
-            <input type="button" type="submit" name="confirm_button" class="button" value="Confirmer">
-        </form>
-    </div>
-
-</main>
-
-<footer>
-    <div>
-        <a href="index.html">Accueil</a>
-    </div>
-    <div>
-        <a href="#">Se Connecter</a>
-    </div>
-    <div>
-        <a href="ranking.html">Classement</a>
-    </div>
-</footer>
-
-
+<script src="js/sondage.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
