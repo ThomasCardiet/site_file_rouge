@@ -102,6 +102,26 @@ main {
     background-color: var(--background_sondage);
 }
 
+.pseudo {
+    font-weight: bold;
+    font-size: 3em;
+    font-family: var(--font_title1);
+    text-align: center;
+    border: black 5px solid;
+    border-radius: 20px;
+    background-color: var(--background_sondage);
+}
+
+.results {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: var(--font_title1);
+    border: black 5px solid;
+    border-radius: 20px;
+    background-color: var(--background_sondage);
+    padding: 5%;
+}
+
 .responses form div{
     font-size: 5em;
     padding: 2%;

@@ -1,17 +1,16 @@
 const responses = document.getElementsByClassName("response");
 const checkboxs = document.getElementsByClassName("checkbox");
 const questionTitle = document.getElementById("question");
-document.querySelector()
 
 const user = {
     name: prompt("Quel est ton nom", "Nom"),
     good_answer: 0,
 }
 
-var h3_pseudo = document.createElement('h3');
+let h3_pseudo = document.createElement('h3');
 h3_pseudo.className = "pseudo";
-h3_pseudo.textContent = user.name;
-document.getElementsByClassName("responses")[0].insertBefore(h3_pseudo);
+h3_pseudo.textContent = 'Votre nom: ' + user.name;
+questionTitle.insertAdjacentElement('afterend', h3_pseudo);
 
 var nb_question = 0;
 
@@ -148,8 +147,13 @@ $("#button").click(function() {
 
 function changeQuestion() {
     if(nb_question >= sondage.questions.length) {
-        //resultat
-        alert("bonnes réponses " + user.good_answer);
+        //results
+
+        let results = document.createElement('h3');
+        results.className = "results";
+        results.textContent = 'Votre Score: ' + ((user.good_answer/nb_question)*100).toFixed(2) + '/100';
+        h3_pseudo.insertAdjacentElement('afterend', results);
+
         return;
     }
 
