@@ -147,7 +147,7 @@ $("#button").click(function() {
 
 function changeQuestion() {
     if(nb_question >= sondage.questions.length) {
-        //results
+        //resultssnoopy
 
         let results = document.createElement('h3');
         results.className = "results";
